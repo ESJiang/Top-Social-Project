@@ -1,0 +1,73 @@
+/* --- Main Left --- */
+.main-left {
+    position: sticky;
+    display: flex;
+    flex-flow: column nowrap;
+    height: inherit;
+    min-width: 250px;
+    flex: 1;
+    overflow-x: hidden;
+    top: -1rem;
+}
+
+.main-left > .profile {
+    background-color: var(--panel-bgcolor);
+}
+
+.main-left h2 {
+    font-size: 0.8rem;
+}
+
+.main-left .btn {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-left .btn:hover {
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.main-left .sidebar {
+    background: var(--panel-bgcolor);
+    border-radius: 1rem;
+    width: inherit;
+}
+
+.main-left .sidebar .menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.main-left .sidebar > ul > li:first-of-type > .menu-item {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.main-left .sidebar > ul > li:last-of-type > .menu-item {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.main-left .sidebar .menu-item:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.main-left .sidebar i {
+    position: relative;
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    margin-left: 1rem;
+}
+
+.main-left .sidebar h2 {
+    margin-left: 1rem;
+    font-size: large;
+}

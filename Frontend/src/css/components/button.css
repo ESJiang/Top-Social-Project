@@ -1,0 +1,25 @@
+/* --- Button --- */
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--btn-border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-canel {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    box-shadow: 0 0 1px var(--color-gray);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

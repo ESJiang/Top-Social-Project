@@ -1,0 +1,27 @@
+/* --- Media --- */
+@media (max-width: 1420px) {
+    .main-left {
+        display: none;
+    }
+}
+
+@media (max-width: 1245px) {
+    .main-right {
+        display: none;
+    }
+}
+
+@media (max-width: 745px) {
+    .popup-content > p {
+        font-size: 1rem;
+    }
+    .search-box {
+        display: none;
+    }
+}
+
+@media (max-width: 595px) {
+    .main-middle-card-wrapper > figure:last-of-type {
+        display: none;
+    }
+}

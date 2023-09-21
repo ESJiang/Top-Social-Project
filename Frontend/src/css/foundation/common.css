@@ -1,0 +1,76 @@
+/* --- Basic --- */
+:root {
+    --color-white: #f5f5f3;
+    --color-black: #1c2033;
+    --color-gray: #3d3d3d;
+    --color-primary: #077175;
+    --panel-bgcolor: #fff;
+    --font-size: 1.5rem;
+    --btn-padding: 0.6rem 2rem;
+    --btn-border-radius: 2rem;
+    --mainright-margin: 0.5rem;
+}
+
+html,
+body {
+    width: 100dvw;
+    min-height: 100dvh;
+    background: var(--color-white);
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/play/v19/6aez4K2oVqwIvtg2H70Q13HqPA.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+*,
+*::before,
+*::after {
+    font-family: "Play", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-black);
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- Common --- */
+.container {
+    display: flex;
+    width: 95dvw;
+    height: 100%;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.background {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 90%;
+}
